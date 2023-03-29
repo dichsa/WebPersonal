@@ -1,0 +1,19 @@
+body {
+    background-image: url("/images/66139.jpg");
+}
+main {
+    color: white;
+}
+
+.navbar {
+    list-style: none;
+}
+
+.yo {
+    padding: 10px 10px 10px 20px;
+    line-height : 5px;
+}
+
+.nombre {
+    font-size: 1.7em;
+}
