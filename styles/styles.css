@@ -6,21 +6,35 @@
   
 body {
     background-image: url("/images/66139.jpg");
+    background-attachment: fixed;
     margin: 0;
     margin-bottom: 40px;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
+
+.flex-container {
+  display: flex;
+  flex-direction: column;
+}
+
 .pagPrincipal {
     color: white;
-    background-attachment: scroll;
     position: relative;
 }
 
 .personalInfo {
-    color: black;
-    background-color: beige;
+  display: flex;
+  flex-wrap: wrap;
+  color: black;
+  background-color: white;
+  opacity: 0.4;
+  margin-top: 550px;
 }
-
+.infoDiego {
+  width: 100%;
+  padding: 200px 600px 200px 600px;
+  justify-content: center;
+}
 .navbar {
     list-style: none;
     margin-left:280px;
@@ -154,9 +168,15 @@ footer {
     .button.secondary a:hover {
       color: #ddd;
     }
+    .infoDiego {
+      padding: 150px;
+    }
+    .yo {
+      font-size: 25px;
+    }
   }
   /* Desktop menu */
-  @media all and (min-width: 900px) {
+  @media all and (min-width: 992px) {
     .item {
       display: block;
       width: auto;
@@ -179,6 +199,13 @@ footer {
     .menu li.button {
       padding-right: 0;
     }
+    .infoDiego {
+      width: 100%;
+      padding: 200px 300px 200px 300px;
+    }
+    .yo {
+      font-size: 25px;
+    }
   }
   @media all and (max-width: 600px) {
     .yo {
@@ -188,13 +215,21 @@ footer {
         font-size: 35px;
         margin: 350px 0px -5px 300px;
     }
+    .infoDiego {
+      padding: 40px;
+      justify-content: center;
+    }
+    .yo {
+      margin: 350px 0px -5px 0px;
+      font-size: 20px;
+    }
   }
-  @media all and (max-width: 1200px) {
+  @media all and (min-width: 1200px) {
     .yo {
         position: relative;
         padding: 10px 10px 10px 20px;
         line-height : 35px;
         font-size: 25px;
-        margin: 350px 0px -5px 0px;
+        margin: 350px 0px -5px 200px;
     }
   }
